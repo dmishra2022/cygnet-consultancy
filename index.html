@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cygnet Solutions - IT Consultancy</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Add this BEFORE your main.js script -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+    // Initialize EmailJS with your Public Key
+    (function() {
+        emailjs.init('3dIrykFbbho2rmT9o'); // Replace with your actual public key
+    })();
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Cygnet Solutions</div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#case-studies">Case Studies</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Empowering Your Digital Future</h1>
+            <p class="subtitle">Expert IT Consulting, Product Development & AI Integration</p>
+            <a href="#contact" class="btn">Get Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/images/service-1.png" alt="Product Development">
+                    </div>
+                    <h3>Product Development</h3>
+                    <p>End-to-end software & app development tailored to your needs.</p>
+                    </div>
+                    <div class="service-card">
+                      <div class="service-icon">
+                          <img src="assets/images/service-1.png" alt="Product Development">
+                      </div>
+                      <h3>End To End IT Consulting</h3>
+                      <p>End-to-end IT Consting for your businesses.</p>
+                  </div>
+                  <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/images/service-2.png" alt="Product Development">
+                    </div>
+                    <h3>Solution Desiging and Architcture</h3>
+                    <p>Helping in Solution Design and Architcture for you business Idea</p>
+                </div>
+                <div class="service-card">
+                  <div class="service-icon">
+                      <img src="assets/images/service-3.png" alt="Product Development">
+                  </div>
+                  <h3>GenAI Solutining and Integration</h3>
+                  <p>All kind of GenAI Solutioning Agentic , chat bot etc. and Integration with exiting appliction</p>
+              </div>
+                <!-- Repeat for other services -->
+            </div>
+        </div>
+    </section>
+
+   <!-- About Us Section -->
+<section id="about" class="section-padding">
+  <div class="container">
+      <h2 class="section-title">About Cygnet Solutions</h2>
+      <p class="subtitle" style="max-width: 700px; margin: 0 auto 40px;">"Innovate. Transform. Succeed."</p>
+
+      <!-- Mission -->
+      <div class="service-card" style="text-align: center; margin-bottom: 40px;">
+          <div class="service-icon">
+              <i class="fas fa-bullseye" style="font-size: 2.5rem; color: var(--accent);"></i>
+          </div>
+          <h3>Our Mission</h3>
+          <p>We exist to <strong>simplify complexity</strong>. Whether it's building scalable software, architecting secure systems, or integrating AI-driven automation, we deliver solutions that drive growth, efficiency, and competitive advantage.</p>
+      </div>
+
+      <!-- Why Choose Us -->
+      <div class="services-grid" style="margin-bottom: 60px;">
+          <div class="service-card">
+              <div class="service-icon">
+                  <i class="fas fa-brain" style="font-size: 2.5rem;"></i>
+              </div>
+              <h3>Deep Expertise</h3>
+              <p>50+ years combined experience in IT consulting and product development.</p>
+          </div>
+          <div class="service-card">
+              <div class="service-icon">
+                  <i class="fas fa-user-tie" style="font-size: 2.5rem;"></i>
+              </div>
+              <h3>Client-Centric</h3>
+              <p>Tailored solutions - no cookie-cutter approaches.</p>
+          </div>
+          <div class="service-card">
+              <div class="service-icon">
+                  <i class="fas fa-rocket" style="font-size: 2.5rem;"></i>
+              </div>
+              <h3>Future-Focused</h3>
+              <p>GenAI, cloud-native architectures, and scalable systems.</p>
+          </div>
+          <div class="service-card">
+              <div class="service-icon">
+                  <i class="fas fa-chart-line" style="font-size: 2.5rem;"></i>
+              </div>
+              <h3>Proven Results</h3>
+              <p><a href="#case-studies" style="color: var(--accent);">See case studies</a> for measurable impacts.</p>
+          </div>
+      </div>
+
+      <!-- Values -->
+      <h3 style="text-align: center; margin-bottom: 30px; color: var(--primary);">Our Core Values</h3>
+      <div class="services-grid">
+          <div class="service-card">
+              <h3><i class="fas fa-lightbulb" style="color: var(--accent);"></i> Innovation</h3>
+              <p>We challenge the status quo.</p>
+          </div>
+          <div class="service-card">
+              <h3><i class="fas fa-handshake" style="color: var(--accent);"></i> Integrity</h3>
+              <p>Transparency in every interaction.</p>
+          </div>
+          <div class="service-card">
+              <h3><i class="fas fa-bolt" style="color: var(--accent);"></i> Agility</h3>
+              <p>Adapting to your evolving needs.</p>
+          </div>
+          <div class="service-card">
+              <h3><i class="fas fa-chart-line" style="color: var(--accent);"></i> Impact</h3>
+              <p>Measurable results, not just deliverables.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section class="section-padding" style="background: var(--light);">
+  <div class="container">
+      <h2 class="section-title">Meet Our Leadership</h2>
+      
+      <div class="services-grid">
+          <!-- Team Member 1 -->
+          <div class="service-card" style="text-align: center;">
+              <div class="service-icon" style="width: 150px; height: 150px; border-radius: 50%; overflow: hidden; border: 3px solid var(--accent);">
+                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                       alt="John Doe" 
+                       style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <h3>John Doe</h3>
+              <p style="color: var(--secondary); font-weight: 600;">Founder & CTO</p>
+              <p>Ex-Google, AI/ML specialist with 15+ years in enterprise architecture.</p>
+              <div style="margin-top: 15px;">
+                  <a href="#" style="color: var(--accent); margin: 0 5px;"><i class="fab fa-linkedin"></i></a>
+                  <a href="#" style="color: var(--accent); margin: 0 5px;"><i class="fas fa-envelope"></i></a>
+              </div>
+          </div>
+          
+          <!-- Team Member 2 -->
+          <div class="service-card" style="text-align: center;">
+              <div class="service-icon" style="width: 150px; height: 150px; border-radius: 50%; overflow: hidden; border: 3px solid var(--accent);">
+                  <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                       alt="Jane Smith" 
+                       style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <h3>Jane Smith</h3>
+              <p style="color: var(--secondary); font-weight: 600;">Lead Solutions Architect</p>
+              <p>Cloud migration guru, AWS/Azure certified.</p>
+              <div style="margin-top: 15px;">
+                  <a href="#" style="color: var(--accent); margin: 0 5px;"><i class="fab fa-linkedin"></i></a>
+                  <a href="#" style="color: var(--accent); margin: 0 5px;"><i class="fas fa-envelope"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+ <!-- Case Studies Section -->
+<section id="case-studies" class="section-padding" style="background: var(--light);">
+  <div class="container">
+      <h2 class="section-title">Success Stories</h2>
+      <p class="subtitle" style="text-align: center; max-width: 700px; margin: 0 auto 40px;">See how we've helped businesses transform through technology</p>
+
+      <div class="services-grid">
+          <!-- Case Study 1 -->
+          <div class="service-card">
+              <div style="height: 180px; overflow: hidden; border-radius: 8px 8px 0 0; margin: -30px -30px 20px -30px;">
+                  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                       alt="AI Chatbot Implementation" 
+                       style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <h3>AI-Powered Chatbot for E-Commerce</h3>
+              <p><strong>Challenge:</strong> High customer service costs with 24/7 support needs.</p>
+              <p><strong>Solution:</strong> Custom NLP chatbot integrated with order management system.</p>
+              <div style="margin-top: 20px; background: rgba(62, 146, 204, 0.1); padding: 15px; border-radius: 4px;">
+                  <p style="margin: 0; color: var(--primary); font-weight: 600;">
+                      <i class="fas fa-chart-line" style="color: var(--accent);"></i> 
+                      Results: 30% increase in sales, 60% reduction in support tickets
+                  </p>
+              </div>
+              <a href="#" class="btn" style="display: inline-block; margin-top: 20px; width: 100%; text-align: center;">Read Full Case Study</a>
+          </div>
+
+          <!-- Case Study 2 -->
+          <div class="service-card">
+              <div style="height: 180px; overflow: hidden; border-radius: 8px 8px 0 0; margin: -30px -30px 20px -30px;">
+                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                       alt="Cloud Migration" 
+                       style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <h3>Cloud Migration for Financial Services</h3>
+              <p><strong>Challenge:</strong> Legacy systems causing compliance risks and high maintenance costs.</p>
+              <p><strong>Solution:</strong> Secure AWS architecture with zero-downtime migration.</p>
+              <div style="margin-top: 20px; background: rgba(62, 146, 204, 0.1); padding: 15px; border-radius: 4px;">
+                  <p style="margin: 0; color: var(--primary); font-weight: 600;">
+                      <i class="fas fa-dollar-sign" style="color: var(--accent);"></i> 
+                      Results: 40% cost reduction, 100% compliance achievement
+                  </p>
+              </div>
+              <a href="#" class="btn" style="display: inline-block; margin-top: 20px; width: 100%; text-align: center;">Read Full Case Study</a>
+          </div>
+
+          <!-- Case Study 3 -->
+          <div class="service-card">
+              <div style="height: 180px; overflow: hidden; border-radius: 8px 8px 0 0; margin: -30px -30px 20px -30px;">
+                  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                       alt="GenAI Integration" 
+                       style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <h3>GenAI Integration for Healthcare</h3>
+              <p><strong>Challenge:</strong> Manual medical record analysis causing diagnostic delays.</p>
+              <p><strong>Solution:</strong> Custom LLM model trained on medical literature.</p>
+              <div style="margin-top: 20px; background: rgba(62, 146, 204, 0.1); padding: 15px; border-radius: 4px;">
+                  <p style="margin: 0; color: var(--primary); font-weight: 600;">
+                      <i class="fas fa-clock" style="color: var(--accent);"></i> 
+                      Results: 75% faster analysis, 90% accuracy rate
+                  </p>
+              </div>
+              <a href="#" class="btn" style="display: inline-block; margin-top: 20px; width: 100%; text-align: center;">Read Full Case Study</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <!-- Contact Us Section -->
+<section id="contact" class="section-padding">
+  <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      
+      <div class="services-grid" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+          <!-- Map Section -->
+          <div class="service-card" style="padding: 0; height: 100%;">
+              <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.004071149947!2d77.59727631482193!3d12.97239099085638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf15bc5b1f66d016b!2sBangalore%20International%20Tech%20Park!5e0!3m2!1sen!2sin!4v1623394253177!5m2!1sen!2sin" 
+                  width="100%" 
+                  height="400" 
+                  style="border:0; border-radius: 8px;" 
+                  allowfullscreen="" 
+                  loading="lazy">
+              </iframe>
+              <div style="padding: 20px;">
+                  <h3>Our Office</h3>
+                  <p><i class="fas fa-map-marker-alt" style="color: var(--accent); margin-right: 10px;"></i> 123 Tech Park, Bangalore, India</p>
+                  <p><i class="fas fa-clock" style="color: var(--accent); margin-right: 10px;"></i> Mon-Fri: 9AM - 6PM</p>
+              </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="service-card">
+              <form id="contactForm" class="contact-form">
+                  <div style="margin-bottom: 20px;">
+                      <label for="name" style="display: block; margin-bottom: 5px; font-weight: 600;">Full Name*</label>
+                      <input 
+                          type="text" 
+                          id="name" 
+                          name="name" 
+                          required 
+                          style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px;">
+                  </div>
+                  
+                  <div style="margin-bottom: 20px;">
+                      <label for="email" style="display: block; margin-bottom: 5px; font-weight: 600;">Email*</label>
+                      <input 
+                          type="email" 
+                          id="email" 
+                          name="email" 
+                          required 
+                          style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px;">
+                  </div>
+                  
+                  <div style="margin-bottom: 20px;">
+                      <label for="phone" style="display: block; margin-bottom: 5px; font-weight: 600;">Phone</label>
+                      <input 
+                          type="tel" 
+                          id="phone" 
+                          name="phone" 
+                          style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px;">
+                  </div>
+                  
+                  <div style="margin-bottom: 20px;">
+                      <label for="message" style="display: block; margin-bottom: 5px; font-weight: 600;">Message*</label>
+                      <textarea 
+                          id="message" 
+                          name="message" 
+                          rows="5" 
+                          required 
+                          style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+                  </div>
+                  
+                  <button type="submit" class="btn" style="width: 100%;">
+                      <span id="submitText">Send Message</span>
+                      <div id="loadingSpinner" style="display: none;">
+                          <i class="fas fa-spinner fa-spin"></i> Sending...
+                      </div>
+                  </button>
+                  
+                  <div id="formMessage" style="margin-top: 15px; display: none;"></div>
+              </form>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- JavaScript for Form Submission -->
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Show loading state
+      const submitBtn = document.querySelector('#contactForm button[type="submit"]');
+      submitBtn.disabled = true;
+      document.getElementById('submitText').style.display = 'none';
+      document.getElementById('loadingSpinner').style.display = 'block';
+      
+      // Prepare form data
+      const formData = {
+        from_name: document.getElementById('name').value,
+        from_email: document.getElementById('email').value,
+        phone_number: document.getElementById('phone').value,
+        message: document.getElementById('message').value,
+        reply_to: document.getElementById('email').value // Important for reply-to
+      };
+      
+      // Send email via EmailJS
+      emailjs.send('service_iv05fzt', 'template_9mtaj59', formData)
+        .then(function(response) {
+          // Success message
+          showFormMessage('success', 'Thank you! Your message has been sent. We\'ll contact you within 24 hours.');
+          document.getElementById('contactForm').reset();
+        }, function(error) {
+          // Error message
+          showFormMessage('error', 'Oops! Something went wrong. Please try again later.');
+        })
+        .finally(function() {
+          // Reset button state
+          submitBtn.disabled = false;
+          document.getElementById('submitText').style.display = 'inline';
+          document.getElementById('loadingSpinner').style.display = 'none';
+        });
+    });
+    
+    function showFormMessage(type, text) {
+      const messageDiv = document.getElementById('formMessage');
+      messageDiv.style.display = 'block';
+      
+      if (type === 'success') {
+        messageDiv.innerHTML = `
+          <div style="background: rgba(0, 200, 83, 0.1); padding: 15px; border-radius: 4px; color: var(--primary);">
+            <i class="fas fa-check-circle" style="color: #00c853;"></i> ${text}
+          </div>
+        `;
+      } else {
+        messageDiv.innerHTML = `
+          <div style="background: rgba(255, 87, 34, 0.1); padding: 15px; border-radius: 4px; color: var(--primary);">
+            <i class="fas fa-exclamation-circle" style="color: #ff5722;"></i> ${text}
+          </div>
+        `;
+      }
+      
+      // Hide after 5 seconds
+      setTimeout(() => {
+        messageDiv.style.display = 'none';
+      }, 5000);
+    }
+  </script>
+
+    <!-- Footer -->
+    <!-- Footer Section -->
+<footer style="background: var(--primary); color: white; padding: 60px 0 30px;">
+  <div class="container">
+      <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
+          <!-- Company Info -->
+          <div>
+              <h3 style="color: var(--accent); margin-bottom: 20px;">Cygnet Solutions</h3>
+              <p>Innovate. Transform. Succeed.</p>
+              <div style="margin-top: 20px;">
+                  <a href="#" style="color: white; margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
+                  <a href="#" style="color: white; margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-facebook"></i></a>
+                  <a href="#" style="color: white; margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-whatsapp"></i></a>
+                  <a href="#" style="color: white; margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
+              </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+              <h3 style="color: var(--accent); margin-bottom: 20px;">Quick Links</h3>
+              <ul style="list-style: none; padding: 0;">
+                  <li style="margin-bottom: 10px;"><a href="#home" style="color: white; text-decoration: none;">Home</a></li>
+                  <li style="margin-bottom: 10px;"><a href="#services" style="color: white; text-decoration: none;">Services</a></li>
+                  <li style="margin-bottom: 10px;"><a href="#case-studies" style="color: white; text-decoration: none;">Case Studies</a></li>
+                  <li style="margin-bottom: 10px;"><a href="#about" style="color: white; text-decoration: none;">About Us</a></li>
+                  <li style="margin-bottom: 10px;"><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
+              </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+              <h3 style="color: var(--accent); margin-bottom: 20px;">Services</h3>
+              <ul style="list-style: none; padding: 0;">
+                  <li style="margin-bottom: 10px;"><a href="#services" style="color: white; text-decoration: none;">Product Development</a></li>
+                  <li style="margin-bottom: 10px;"><a href="#services" style="color: white; text-decoration: none;">IT Consulting</a></li>
+                  <li style="margin-bottom: 10px;"><a href="#services" style="color: white; text-decoration: none;">Solution Architecture</a></li>
+                  <li style="margin-bottom: 10px;"><a href="#services" style="color: white; text-decoration: none;">GenAI Integration</a></li>
+              </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+              <h3 style="color: var(--accent); margin-bottom: 20px;">Contact Us</h3>
+              <p style="margin-bottom: 15px;">
+                  <i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--accent);"></i>
+                  123 Tech Park, Bangalore, India
+              </p>
+              <p style="margin-bottom: 15px;">
+                  <i class="fas fa-phone-alt" style="margin-right: 10px; color: var(--accent);"></i>
+                  +91 9876543210
+              </p>
+              <p style="margin-bottom: 15px;">
+                  <i class="fas fa-envelope" style="margin-right: 10px; color: var(--accent);"></i>
+                  info@cygnetsolutions.com
+              </p>
+              <a href="#contact" class="btn" style="display: inline-block; margin-top: 10px; background: var(--accent); color: var(--primary);">Get in Touch</a>
+          </div>
+      </div>
+
+      <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; text-align: center;">
+          <p style="margin: 0;">&copy; 2023 Cygnet Solutions. All rights reserved.</p>
+          <p style="margin: 10px 0 0; font-size: 0.9rem;">
+              <a href="#" style="color: white; text-decoration: none; margin: 0 10px;">Privacy Policy</a> | 
+              <a href="#" style="color: white; text-decoration: none; margin: 0 10px;">Terms of Service</a>
+          </p>
+      </div>
+  </div>
+</footer>
+
+    <script src="assets/js/main.js"></script>
+    <!-- Add this to your existing CSS (style.css) -->
+<style>
+  @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(-250px * 5)); }
+  }
+  
+  /* Pause animation on hover */
+  .logo-carousel:hover {
+      animation-play-state: paused;
+  }
+</style>
+</body>
+</html>
